@@ -1,16 +1,9 @@
 import numpy as np 
 import matplotlib.pyplot as plt
 import plotly.express as px
-['Li', 'Be', 'B', 'C', 
- 'N', 'O', 'Ne', 'P', 
- 'S', 'C', 'Br', 'Cl', 'Ra', 'Fr']
-color  = px.colors.qualitative.Light24
-color[1] = color[10]
-color[6] = color[9]
     
-color_discrete_map= { str(idx): color[idx-1] for idx in range(1, 15)}   #map label to new color
-#color = px.colors.qualitative.Light24   #color map
-#color_discrete_map= { str(idx): color[idx-1] for idx in range(1, 25)}   #map label to new color
+color = px.colors.qualitative.Light24   #color map
+color_discrete_map= { str(idx): color[idx-1] for idx in range(1, 25)}   #map label to new color
 symbol_discrete_map = {'1': 'circle-open', '2': 'diamond-open', '3': 'square-open', '4': 'cross-open', 
                        '5': 'x-open', '6': 'triangle-up-open', '7': 'triangle-down-open', '8': 'triangle-left-open',
                        '9': 'triangle-right-open', '10': 'triangle-ne-open', '11': 'triangle-se-open', 
